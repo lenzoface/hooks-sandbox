@@ -5,7 +5,7 @@ function useLocalStorage(key, initialValue) {
 
     const setValue = (value) => {
         // Check if function
-        const valueToStore = value instanceof Function ? value(localStorageValue) : value
+        const valueToStore = value instanceof Function ? value(localStorageValue) : value 
         // Set to state
         setLocalStorageValue(value)
         // Set to local storage

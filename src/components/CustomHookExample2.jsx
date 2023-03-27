@@ -2,7 +2,7 @@ import useLocalStorage from "../hooks/useLocalStorage"
 
 function CustomHookExample2() {
     const [task, setTask] = useLocalStorage('task', '')
-    const [tasks, setTasks] = useLocalStorage('tasks', [])
+    const [tasks, setTasks] = useLocalStorage('tasks', []) 
 
     const onSubmit = e => {
         e.preventDefault()
